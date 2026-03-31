@@ -6,9 +6,16 @@
 │   │   ├── admin
 │   │   │   ├── {events,users,categories,registrations,support,settings,analytics}
 │   │   │   ├── analytics
+│   │   │   │   ├── reports
+│   │   │   │   │   └── page.tsx
 │   │   │   │   └── page.tsx
+│   │   │   |
+│   │   │   ├── audit-logs
+│   │   │   │   └── page.tsx
+│   │   │   │ 
 │   │   │   ├── categories
 │   │   │   │   └── page.tsx
+│   │   │   │ 
 │   │   │   ├── events
 │   │   │   │   ├── [id]
 │   │   │   │   │   └──edit
@@ -16,15 +23,30 @@
 │   │   │   │   ├── create
 │   │   │   │   │   └── page.tsx
 │   │   │   │   └── page.tsx
-│   │   │   ├── profile
+│   │   │   │ 
+│   │   │   ├──notifications
+│   │   │   │   ├── create
+│   │   │   │   │    └── page.tsx
 │   │   │   │   └── page.tsx
+│   │   │   │ 
+│   │   │   ├── profile
+│   │   │   │   ├── edit
+│   │   │   │   |   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   │ 
 │   │   │   ├── registrations
+│   │   │   │   ├── [eventId]
+│   │   │   │   |   └── page.tsx
 │   │   │   │   └── page.tsx
 │   │   │   ├── settings
 │   │   │   │   └── page.tsx
 │   │   │   ├── support
 │   │   │   │   └── page.tsx
 │   │   │   ├── users
+│   │   │   │   ├── [id]
+│   │   │   │   |   └── edit
+│   │   │   │   |       └── page.tsx
+│   │   │   │   |
 │   │   │   │   └── page.tsx
 │   │   │   ├── layout.tsx
 │   │   │   └── page.tsx
@@ -74,11 +96,20 @@
 │   │   └── authStore.ts
 │   ├── hooks
 │   │   ├── useAdminEvents.ts
+│   │   ├── useAdminRegistrations.ts
+│   │   ├── useAdminUsers.ts
+│   │   ├── useAnalytics.ts
+│   │   ├── useAuditLogs.ts
+│   │   ├── useAuditLogsAndSettings.ts
 │   │   ├── useAuth.ts
+│   │   ├── useCategories.ts
 │   │   ├── useEvents.ts
-│   │   └── useNotifications.ts
+│   │   ├── useNotifications.ts
+│   │   └── useProfile.ts
+│   │
 │   ├── services
 │   │   ├── adminService.ts
+│   │   ├── analyticsService.ts
 │   │   ├── api.ts
 │   │   ├── authService.ts
 │   │   ├── eventService.ts
