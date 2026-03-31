@@ -1,0 +1,106 @@
+﻿campus-events-frontend/
+├── public
+├── src
+│   ├── app
+│   │   ├── {login,register,events,support}
+│   │   ├── admin
+│   │   │   ├── {events,users,categories,registrations,support,settings,analytics}
+│   │   │   ├── analytics
+│   │   │   │   └── page.tsx
+│   │   │   ├── categories
+│   │   │   │   └── page.tsx
+│   │   │   ├── events
+│   │   │   │   ├── [id]
+│   │   │   │   │   └──edit
+│   │   │   │   │    └── page.tsx
+│   │   │   │   ├── create
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── profile
+│   │   │   │   └── page.tsx
+│   │   │   ├── registrations
+│   │   │   │   └── page.tsx
+│   │   │   ├── settings
+│   │   │   │   └── page.tsx
+│   │   │   ├── support
+│   │   │   │   └── page.tsx
+│   │   │   ├── users
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── dashboard
+│   │   │   ├── {events,my-events,notifications,profile}
+│   │   │   ├── events
+│   │   │   │   └── page.tsx
+│   │   │   ├── my-events
+│   │   │   │   └── page.tsx
+│   │   │   ├── notifications
+│   │   │   │   └── page.tsx
+│   │   │   ├── profile
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── events
+│   │   │   ├── [id]
+│   │   │   │    └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── forgot-password
+│   │   │   └── page.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── register
+│   │   │   └── page.tsx
+│   │   ├── support
+│   │   │   └── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── {ui,layout,events,admin,dashboard}
+│   │   ├── events
+│   │   │   ├── EventCard.tsx
+│   │   │   └── EventFilters.tsx
+│   │   ├── layout
+│   │   │   ├── AuthHydrator.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── RouteGuard.tsx
+│   │   │   └── Sidebar.tsx
+│   │   └── ui
+│   │       ├── Button.tsx
+│   │       ├── index.tsx
+│   │       └── Input.tsx
+│   ├── context
+│   │   └── authStore.ts
+│   ├── hooks
+│   │   ├── useAdminEvents.ts
+│   │   ├── useAuth.ts
+│   │   ├── useEvents.ts
+│   │   └── useNotifications.ts
+│   ├── services
+│   │   ├── adminService.ts
+│   │   ├── api.ts
+│   │   ├── authService.ts
+│   │   ├── eventService.ts
+│   │   ├── notificationService.ts
+│   │   ├── supportService.ts
+│   │   └── userService.ts
+│   ├── types
+│   │   └── index.ts
+│   └── utils
+│       ├── constants.ts
+│       └── helpers.ts
+├── .env.example
+├── .env.local
+├── .eslintrc.json
+├── .gitignore
+├── next.config.mjs
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── README.md
+├── Structure.txt
+├── tailwind.config.ts
+├── tsconfig.json
+└── tsconfig.tsbuildinfo
